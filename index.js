@@ -23,11 +23,7 @@ app.use(
   cors({
     origin: process.env.CLIENT_URL,
     methods: ['POST', 'GET', 'DELETE'],
-    allowedHeaders: [
-      'Content-Type',
-      'Authorization',
-      'Access-Control-Allow-Origin',
-    ],
+    allowedHeaders: ['Content-Type', 'Authorization'],
     credentials: true,
   })
 );
